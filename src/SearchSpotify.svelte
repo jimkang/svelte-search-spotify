@@ -1,6 +1,6 @@
 <script>
-import throttle from 'lodash.throttle';
-import request from 'basic-browser-request';
+var throttle = require('lodash.throttle');
+var request = require('basic-browser-request');
 
 const baseSearchURL = 'https://api.spotify.com/v1/search/?';
 
