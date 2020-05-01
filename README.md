@@ -6,7 +6,7 @@ Note: Only tested for tracks so far.
 
 ## Installation
 
-    npm install @jimkang/svelete-search-spotify
+    npm install svelte-search-spotify
 
 ## Usage
 
