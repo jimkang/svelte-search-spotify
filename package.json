@@ -22,7 +22,7 @@
     "dist"
   ],
   "dependencies": {
-    "basic-browser-request": "^9.0.2",
+    "basic-browser-request": "^10.0.0",
     "lodash.throttle": "^4.1.1"
   }
 }
