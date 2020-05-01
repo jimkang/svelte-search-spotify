@@ -1,5 +1,5 @@
 {
-  "name": "SearchSpotify",
+  "name": "@jimkang/SearchSpotify",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
