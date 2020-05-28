@@ -23,7 +23,7 @@ function onUpdateSearchTerm() {
     mimeType: 'application/json',
     url: `${baseSearchURL}q=${encodeURIComponent(
       searchTerm
-    )}&type=track&limit=10`,
+    )}&type=${targetEntity}&limit=10`,
     headers: {
       authorization: 'Bearer ' + spotifyToken
     }
