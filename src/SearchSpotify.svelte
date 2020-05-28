@@ -56,7 +56,12 @@ function processSearchResults(error, response, result) {
 {#each searchResults as result }
   {#if result }
     {#if result.type === 'episode'}
-      <li class="search-result" on:click={onResultClick(result)}><img alt="Episode image" src="{result.images || result.images[result.images.length - 1].url}"> {result.name}</li>
+      <li class="search-result" on:click={onResultClick(result)}>
+        {#if result.images }
+          <img alt="Episode image" src="{result.images[result.images.length - 1].url}">
+        {/if}
+        {result.name}
+      </li>
     {:else}
       <li class="search-result" on:click={onResultClick(result)}>{result.name} by {result.artists.map(artist => artist.name).join(', ')}</li>
     {/if}
