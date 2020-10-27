@@ -62,6 +62,8 @@ function processSearchResults(error, response, result) {
         {/if}
         {result.name}
       </li>
+    {:else if result.type === 'playlist'}
+      <li class="search-result" on:click={onResultClick(result)}>{result.name} by {result.owner.display_name}</li>
     {:else}
       <li class="search-result" on:click={onResultClick(result)}>{result.name} by {result.artists.map(artist => artist.name).join(', ')}</li>
     {/if}
